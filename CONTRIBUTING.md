@@ -27,7 +27,6 @@ git checkout -b add-tip-[topic-name]
 
 ```bash
 git add .
-
 git commit -m "Add tip about [topic]"
 ```
 
@@ -51,7 +50,6 @@ git push origin add-my-tip
 
 - Make sure your tip is **relevant** and **accurate**.
 - Check existing topics to avoid duplicates.
-- For clarity, you can reference the [Laravel Documentation](https://laravel.com/docs) or the [Digging Code Tips page](https://blog.mmramadan.com/tips).
 
 ---
 

@@ -10,7 +10,10 @@ Each tip is added as a dedicated Markdown file grouped by topic, such as:
 - **eloquent-relationships.md**
 - **validation.md**
 
-You can explore existing topics on the [Digging Code Tips](https://blog.mmramadan.com/tips) page. For accuracy, confirm your topic category using the [Laravel Documentation](https://laravel.com/docs).
+You can explore more existing topics on the [Digging Code Tips](https://blog.mmramadan.com/tips) page.
+
+> [!NOTE]
+> For accuracy, if you are adding a Laravel-related tip, make sure to verify the topic category using the [Laravel Documentation](https://laravel.com/docs).
 
 ## 🙌 Thanks
 
