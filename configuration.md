@@ -4,7 +4,7 @@
 
 ## Maintenance Mode
 
-If you’ve enabled maintenance mode and want visitors to access certain pages, you can whitelist them in your `AppServiceProvider` using the `except` method:
+If you've enabled maintenance mode in Laravel 11+ and want visitors to access specific pages, you can whitelist them in your `AppServiceProvider` using the `except` method:
 
 ```php
 use Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance;
