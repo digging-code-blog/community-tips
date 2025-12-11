@@ -18,7 +18,7 @@ git checkout -b add-tip-[topic-name]
 
 ### 3. Add Your Tip
 
-- Create a new Markdown file for your tip with the topic name, e.g., `eloquent.md`.
+- Create a new Markdown file (if it does not already exist) using the topic name, e.g., `eloquent.md`.
 - Keep your tip clear and concise:
   - **Brief headline**
   - Optional example or code snippet
@@ -56,7 +56,7 @@ git push origin add-my-tip
 ## Review Process
 
 All PRs will be **reviewed before merging**.
-Contributors will be credited in the commit message and on the tip itself if it is published on the blog.
+Contributors will be credited within the tip when it is published on the blog.
 
 ---
 
