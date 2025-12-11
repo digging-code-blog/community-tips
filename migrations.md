@@ -5,6 +5,7 @@
 - [Uncommon Methods](#uncommon-methods)
   - [`invisible`](#invisible)
   - [`temporary`](#temporary)
+  - [`from`](#from)
 
 ## Uncommon Methods
 
@@ -35,5 +36,18 @@ use Illuminate\Database\Schema\Blueprint;
 
 Schema::create('users', function (Blueprint $table) {
     $table->temporary();
+});
+```
+
+### `from`
+
+The `from` method defines the starting value for an auto-incrementing column.
+
+```php
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+
+Schema::create('users', function (Blueprint $table) {
+    $table->integer('age')->from(16);
 });
 ```
