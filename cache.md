@@ -1,5 +1,7 @@
 # Cache
 
+## Table of Contents
+
 - [Naming Convention](#naming-convention)
 
 ## Naming Convention
@@ -15,7 +17,7 @@ For example, if you want to cache **recent posts** and **recent comments**:
 
 So, your cache keys would look like:
 
-```PHP
+```php
 use Illuminate\Support\Facades\Cache;
 
 Cache::rememberForever('recent:posts', function () {

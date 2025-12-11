@@ -1,5 +1,7 @@
 # Configuration
 
+## Table of Contents
+
 - [Maintenance Mode](#maintenance-mode)
 
 ## Maintenance Mode
