@@ -14,6 +14,9 @@
 The `invisible` column modifier hides a column from default `SELECT` queries.
 It still exists in the table, but it will not appear unless explicitly requested in the query.
 
+> [!NOTE]
+> This feature is supported **only by the MySQL database engine**.
+
 ```php
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
