@@ -39,10 +39,12 @@ The same logic applies to the hidden attribute. You can hide both model attribut
 
 #### `makeVisible` / `makeHidden`
 
-You can override visibility attributes at runtime using `makeVisible` and `makeHidden`:
+You can temporarily modify a model's visibility attributes using `makeVisible` and `makeHidden` methods.
 
 ```php
-$users = \App\Models\User::withWhereHas('comments')->get();
+use App\Models\User;
+
+$users = User::withWhereHas('comments')->get();
 
 $users->makeVisible(['updated_at']);
 // $users->makeHidden(['created_at', 'updated_at']);
@@ -55,12 +57,15 @@ return $users;
 
 #### `mergeVisible` / `mergeHidden`
 
-You can also control these attributes at runtime using the `mergeVisible` and `mergeHidden` methods. This is useful when you want to temporarily adjust visibility for a specific model instance.
+The `mergeVisible` and `mergeHidden` methods allow you to dynamically control the visibility of attributes at runtime.
 
 ```php
-$user = \App\Models\User::withWhereHas('comments')->first();
+use App\Models\User;
 
-$user->mergeVisible(['created_at']);
+$user = User::first();
+
+$user->mergeVisible(['updated_at']);
+// $user->mergeHidden(['profile_views']);
 
 return $user;
 ```
