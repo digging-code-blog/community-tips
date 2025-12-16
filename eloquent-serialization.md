@@ -71,4 +71,4 @@ return $user;
 ```
 
 > [!NOTE]
-> These methods work only with single model instances, not collections.
+> These methods are now available on collections, in addition to the model instance, following the acceptance and merge of my PR into Laravel as of version [v12.43.0](https://github.com/laravel/framework/releases/tag/v12.43.0).
